@@ -1,0 +1,158 @@
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  background-color: #e99ac4;
+  color: #4e3030;
+  margin: 0;
+  padding: 24px;
+}
+
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  color: #253c52;
+}
+
+h1 {
+  text-align: center;
+  border-bottom: 2px solid #560606;
+  padding-bottom: 16px;
+}
+
+
+.kontrol-paneli {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: #f1f1e0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2,5px 5px rgba(121, 57, 57, 0.05);
+  margin-bottom: 25px;
+}
+
+.kontrol-paneli > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.kontrol-paneli label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #660f0f;
+}
+
+.kontrol-paneli input[type="text"],
+.kontrol-paneli select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #3f0a0a;
+  border-radius: 6px;
+}
+
+
+.ana-icerik {
+  display: flex;
+  gap: 24px;
+}
+
+
+.kitap-listesi {
+  flex: 3;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+
+.kitap-karti {
+  background-color: #f1f1e0;
+  border: 1px solid #f1f1e0;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2,5px 5px rgba(115, 90, 90, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.kitap-karti h3 {
+  margin: 0 0 4px 0;
+}
+
+.kitap-karti p {
+  margin: 0 0 12px 0;
+  color: #b4a3a3;
+  font-size: 0.95rem;
+}
+
+.kitap-karti button {
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: 1px solid #87134b;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #ddbebe;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.kitap-karti button:hover {
+  background-color: #90908d;
+  border-color: #bbb;
+}
+
+
+.kitap-karti button.active {
+  background-color: #a83e55;
+  border-color: #e1c4d3;
+  color: #dccfd6;
+}
+
+
+.favori-paneli {
+  flex: 1;
+  background-color: #f1f1e0;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(205, 95, 95, 0.05);
+  align-self: flex-start; 
+}
+
+.favori-paneli h2 {
+  margin-top: 0;
+  border-bottom: 2px solid #f1f1e0;
+  padding-bottom: 8px;
+}
+
+.favori-paneli ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.favori-paneli li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.favori-paneli li button {
+  font-size: 0.8rem;
+  padding: 4px 6px;
+  border: 1px solid #f6eaea;
+  background-color: #e8dddd;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #b70000;
+}
